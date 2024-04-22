@@ -120,7 +120,7 @@ if($_POST){
             </tr>
             <tr>
                 <td class="label-td" colspan="2">
-                    <input type="tel" name="tele" class="input-text"  placeholder="ex: +99361234567" pattern="[0]{1}[0-9]{9}" >
+                    <input type="tel" name="tele" class="input-text"  placeholder="ex: +99361234567" >
                 </td>
             </tr>
             <tr>
