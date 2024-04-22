@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="../css/main.css">  
     <link rel="stylesheet" href="../css/admin.css">
         
-    <title>Dashboard</title>
+    <title>Dolandyryş paneli</title>
     <style>
         .dashbord-tables,.doctor-heade{
             animation: transitionIn-Y-over 0.5s;
@@ -74,48 +74,48 @@
                             </tr>
                             <tr>
                                 <td colspan="2">
-                                    <a href="../logout.php" ><input type="button" value="Log out" class="logout-btn btn-primary-soft btn"></a>
+                                    <a href="../logout.php" ><input type="button" value="Hasapdan çykmak" class="logout-btn btn-primary-soft btn"></a>
                                 </td>
                             </tr>
-                    </table>
+                        </table>
                     </td>
                 </tr>
                 <tr class="menu-row" >
-                    <td class="menu-btn menu-icon-dashbord menu-active menu-icon-dashbord-active" >
-                        <a href="index.php" class="non-style-link-menu non-style-link-menu-active"><div><p class="menu-text">Dashboard</p></a></div></a>
-                    </td>
-                </tr>
-                <tr class="menu-row">
-                    <td class="menu-btn menu-icon-appoinment">
-                        <a href="appointment.php" class="non-style-link-menu"><div><p class="menu-text">My Appointments</p></a></div>
-                    </td>
-                </tr>
-                
-                <tr class="menu-row" >
-                    <td class="menu-btn menu-icon-session">
-                        <a href="schedule.php" class="non-style-link-menu"><div><p class="menu-text">My Sessions</p></div></a>
-                    </td>
-                </tr>
-                <tr class="menu-row" >
-                    <td class="menu-btn menu-icon-patient">
-                        <a href="patient.php" class="non-style-link-menu"><div><p class="menu-text">My Patients</p></a></div>
-                    </td>
-                </tr>
-                <tr class="menu-row" >
-                    <td class="menu-btn menu-icon-settings">
-                        <a href="settings.php" class="non-style-link-menu"><div><p class="menu-text">Settings</p></a></div>
-                    </td>
-                </tr>
-                
-            </table>
-        </div>
+                    <td class="menu-btn menu-icon-dashbord  menu-active menu-icon-appoinment-active" >
+                        <a href="index.php" class="non-style-link-menu non-style-link-menu-active"><div><p class="menu-text">Dolandyryş paneli</p></a></div></a>
+        </td>
+        </tr>
+        <tr class="menu-row">
+            <td class="menu-btn menu-icon-appoinment">
+                <a href="appointment.php" class="non-style-link-menu"><div><p class="menu-text">Meniň bellänlerim</p></a></div>
+    </td>
+    </tr>
+
+    <tr class="menu-row" >
+        <td class="menu-btn menu-icon-session">
+            <a href="schedule.php" class="non-style-link-menu"><div><p class="menu-text">Sessiýalarym</p></div></a>
+        </td>
+    </tr>
+    <tr class="menu-row" >
+        <td class="menu-btn menu-icon-patient">
+            <a href="patient.php" class="non-style-link-menu"><div><p class="menu-text">Näsaglarym</p></a></div>
+        </td>
+    </tr>
+    <tr class="menu-row" >
+        <td class="menu-btn menu-icon-settings">
+            <a href="settings.php" class="non-style-link-menu"><div><p class="menu-text">Sazlamalar</p></a></div>
+        </td>
+    </tr>
+
+    </table>
+    </div>
         <div class="dash-body" style="margin-top: 15px">
             <table border="0" width="100%" style=" border-spacing: 0;margin:0;padding:0;" >
                         
                         <tr >
                             
                             <td colspan="1" class="nav-bar" >
-                            <p style="font-size: 23px;padding-left:12px;font-weight: 600;margin-left:20px;">     Dashboard</p>
+                            <p style="font-size: 23px;padding-left:12px;font-weight: 600;margin-left:20px;">     Dolandyryş paneli</p>
                           
                             </td>
                             <td width="25%">
@@ -155,12 +155,12 @@
                     <table class="filter-container doctor-header" style="border: none;width:95%" border="0" >
                     <tr>
                         <td >
-                            <h3>Welcome!</h3>
+                            <h3>Hoş geldiňiz!</h3>
                             <h1><?php echo $username  ?>.</h1>
-                            <p>Thanks for joinnig with us. We are always trying to get you a complete service<br>
-                            You can view your dailly schedule, Reach Patients Appointment at home!<br><br>
+                            <p>Bize goşulanyňyz üçin sag boluň. Elmydama size doly hyzmat bermäge synanyşýarys<br>
+                                Gündelik iş tertibiňizi görüp bilersiňiz<br><br>
                             </p>
-                            <a href="appointment.php" class="non-style-link"><button class="btn-primary btn" style="width:30%">View My Appointments</button></a>
+                            <a href="appointment.php" class="non-style-link"><button class="btn-primary btn" style="width:30%">Meniň belliklerimi gör</button></a>
                             <br>
                             <br>
                         </td>
@@ -196,7 +196,7 @@
                                                                     <?php    echo $doctorrow->num_rows  ?>
                                                                 </div><br>
                                                                 <div class="h3-dashboard">
-                                                                    All Doctors &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                                    Lukmanlar &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                                                 </div>
                                                         </div>
                                                                 <div class="btn-icon-back dashboard-icons" style="background-image: url('../img/icons/doctors-hover.svg');"></div>
@@ -209,7 +209,7 @@
                                                                     <?php    echo $patientrow->num_rows  ?>
                                                                 </div><br>
                                                                 <div class="h3-dashboard">
-                                                                    All Patients &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                                    Hassalar &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                                                 </div>
                                                         </div>
                                                                 <div class="btn-icon-back dashboard-icons" style="background-image: url('../img/icons/patients-hover.svg');"></div>
@@ -224,7 +224,7 @@
                                                                     <?php    echo $appointmentrow ->num_rows  ?>
                                                                 </div><br>
                                                                 <div class="h3-dashboard" >
-                                                                    NewBooking &nbsp;&nbsp;
+                                                                    Täze ýazylmalar &nbsp;&nbsp;
                                                                 </div>
                                                         </div>
                                                                 <div class="btn-icon-back dashboard-icons" style="margin-left: 0px;background-image: url('../img/icons/book-hover.svg');"></div>
@@ -239,7 +239,7 @@
                                                                     <?php    echo $schedulerow ->num_rows  ?>
                                                                 </div><br>
                                                                 <div class="h3-dashboard" style="font-size: 15px">
-                                                                    Today Sessions
+                                                                    Şu günki sesiýalar
                                                                 </div>
                                                         </div>
                                                                 <div class="btn-icon-back dashboard-icons" style="background-image: url('../img/icons/session-iceblue.svg');"></div>
@@ -262,7 +262,7 @@
 
 
                             
-                                    <p id="anim" style="font-size: 20px;font-weight:600;padding-left: 40px;">Your Up Coming Sessions until Next week</p>
+                                    <p id="anim" style="font-size: 20px;font-weight:600;padding-left: 40px;">Geljek hepde çenli geljek sessiýalaryňyz</p>
                                     <center>
                                         <div class="abc scroll" style="height: 250px;padding: 0;margin: 0;">
                                         <table width="85%" class="sub-table scrolldown" border="0" >
@@ -270,18 +270,18 @@
                                             
                                         <tr>
                                                 <th class="table-headin">
-                                                    
-                                                
-                                                Session Title
+
+
+                                                    Sessiýanyň ady
                                                 
                                                 </th>
                                                 
                                                 <th class="table-headin">
-                                                Sheduled Date
+                                                    Meýilleşdirilen senesi
                                                 </th>
                                                 <th class="table-headin">
                                                     
-                                                     Time
+                                                     Wagty
                                                     
                                                 </th>
                                                     
@@ -302,8 +302,8 @@
                                                     <img src="../img/notfound.svg" width="25%">
                                                     
                                                     <br>
-                                                    <p class="heading-main12" style="margin-left: 45px;font-size:20px;color:rgb(49, 49, 49)">We  couldnt find anything related to your keywords !</p>
-                                                    <a class="non-style-link" href="schedule.php"><button  class="login-btn btn-primary-soft btn"  style="display: flex;justify-content: center;align-items: center;margin-left:20px;">&nbsp; Show all Sessions &nbsp;</font></button>
+                                                    <p class="heading-main12" style="margin-left: 45px;font-size:20px;color:rgb(49, 49, 49)">Açar sözleriňiz bilen baglanyşykly hiç zat tapyp bilmedik!</p>
+                                                    <a class="non-style-link" href="schedule.php"><button  class="login-btn btn-primary-soft btn"  style="display: flex;justify-content: center;align-items: center;margin-left:20px;">&nbsp; Ahli sessiýalary görkeziň &nbsp;</font></button>
                                                     </a>
                                                     </center>
                                                     <br><br><br><br>
